@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457C52C61B402477007ECD91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C52C51B402477007ECD91 /* main.m */; };
+		457C52C91B402477007ECD91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C52C81B402477007ECD91 /* AppDelegate.m */; };
+		457C52CC1B402477007ECD91 /* BookViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 457C52CA1B402477007ECD91 /* BookViewer.xcdatamodeld */; };
+		457C52D21B402477007ECD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457C52D01B402477007ECD91 /* Main.storyboard */; };
+		457C52D41B402477007ECD91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457C52D31B402477007ECD91 /* Images.xcassets */; };
+		457C52D71B402477007ECD91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457C52D51B402477007ECD91 /* LaunchScreen.xib */; };
+		457C52E31B402477007ECD91 /* BookViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C52E21B402477007ECD91 /* BookViewerTests.m */; };
+		457C52F41B4026CE007ECD91 /* BVBooksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C52F31B4026CE007ECD91 /* BVBooksTableViewController.m */; };
+		457C52FD1B402807007ECD91 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C52FC1B402807007ECD91 /* Book.m */; };
+		457C53021B402A36007ECD91 /* BVAddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C53011B402A36007ECD91 /* BVAddBookViewController.m */; };
+		457C53061B403547007ECD91 /* BVBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C53051B403547007ECD91 /* BVBookTableViewCell.m */; };
+		457C53091B404769007ECD91 /* BVBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C53081B404769007ECD91 /* BVBookViewController.m */; };
+		457C530C1B40549E007ECD91 /* 9T4o7EeLc.png in Resources */ = {isa = PBXBuildFile; fileRef = 457C530B1B40549E007ECD91 /* 9T4o7EeLc.png */; };
+		457C530F1B40575D007ECD91 /* BVActivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C530E1B40575D007ECD91 /* BVActivityProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		457C52DD1B402477007ECD91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 457C52B81B402477007ECD91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 457C52BF1B402477007ECD91;
+			remoteInfo = BookViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		457C52C01B402477007ECD91 /* BookViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		457C52C41B402477007ECD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457C52C51B402477007ECD91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		457C52C71B402477007ECD91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		457C52C81B402477007ECD91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		457C52CB1B402477007ECD91 /* BookViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookViewer.xcdatamodel; sourceTree = "<group>"; };
+		457C52D11B402477007ECD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		457C52D31B402477007ECD91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		457C52D61B402477007ECD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		457C52DC1B402477007ECD91 /* BookViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		457C52E11B402477007ECD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		457C52E21B402477007ECD91 /* BookViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookViewerTests.m; sourceTree = "<group>"; };
+		457C52F21B4026CE007ECD91 /* BVBooksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BVBooksTableViewController.h; path = ../BVBooksTableViewController.h; sourceTree = "<group>"; };
+		457C52F31B4026CE007ECD91 /* BVBooksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BVBooksTableViewController.m; path = ../BVBooksTableViewController.m; sourceTree = "<group>"; };
+		457C52FB1B402807007ECD91 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		457C52FC1B402807007ECD91 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		457C53001B402A36007ECD91 /* BVAddBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVAddBookViewController.h; sourceTree = "<group>"; };
+		457C53011B402A36007ECD91 /* BVAddBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVAddBookViewController.m; sourceTree = "<group>"; };
+		457C53041B403547007ECD91 /* BVBookTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVBookTableViewCell.h; sourceTree = "<group>"; };
+		457C53051B403547007ECD91 /* BVBookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVBookTableViewCell.m; sourceTree = "<group>"; };
+		457C53071B404769007ECD91 /* BVBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVBookViewController.h; sourceTree = "<group>"; };
+		457C53081B404769007ECD91 /* BVBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVBookViewController.m; sourceTree = "<group>"; };
+		457C530B1B40549E007ECD91 /* 9T4o7EeLc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9T4o7EeLc.png; sourceTree = "<group>"; };
+		457C530D1B40575D007ECD91 /* BVActivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVActivityProvider.h; sourceTree = "<group>"; };
+		457C530E1B40575D007ECD91 /* BVActivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVActivityProvider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		457C52BD1B402477007ECD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457C52D91B402477007ECD91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		457C52B71B402477007ECD91 = {
+			isa = PBXGroup;
+			children = (
+				457C52C21B402477007ECD91 /* BookViewer */,
+				457C52DF1B402477007ECD91 /* BookViewerTests */,
+				457C52C11B402477007ECD91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		457C52C11B402477007ECD91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				457C52C01B402477007ECD91 /* BookViewer.app */,
+				457C52DC1B402477007ECD91 /* BookViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		457C52C21B402477007ECD91 /* BookViewer */ = {
+			isa = PBXGroup;
+			children = (
+				457C530A1B405490007ECD91 /* Resources */,
+				457C53031B40352C007ECD91 /* Views */,
+				457C52FF1B40281E007ECD91 /* Models */,
+				457C52FE1B40280C007ECD91 /* BVViewControllers */,
+				457C52C71B402477007ECD91 /* AppDelegate.h */,
+				457C52C81B402477007ECD91 /* AppDelegate.m */,
+				457C52D01B402477007ECD91 /* Main.storyboard */,
+				457C52D31B402477007ECD91 /* Images.xcassets */,
+				457C52D51B402477007ECD91 /* LaunchScreen.xib */,
+				457C52CA1B402477007ECD91 /* BookViewer.xcdatamodeld */,
+				457C52C31B402477007ECD91 /* Supporting Files */,
+			);
+			path = BookViewer;
+			sourceTree = "<group>";
+		};
+		457C52C31B402477007ECD91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457C52C41B402477007ECD91 /* Info.plist */,
+				457C52C51B402477007ECD91 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457C52DF1B402477007ECD91 /* BookViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				457C52E21B402477007ECD91 /* BookViewerTests.m */,
+				457C52E01B402477007ECD91 /* Supporting Files */,
+			);
+			path = BookViewerTests;
+			sourceTree = "<group>";
+		};
+		457C52E01B402477007ECD91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				457C52E11B402477007ECD91 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		457C52FE1B40280C007ECD91 /* BVViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				457C52F21B4026CE007ECD91 /* BVBooksTableViewController.h */,
+				457C52F31B4026CE007ECD91 /* BVBooksTableViewController.m */,
+				457C53001B402A36007ECD91 /* BVAddBookViewController.h */,
+				457C53011B402A36007ECD91 /* BVAddBookViewController.m */,
+				457C53071B404769007ECD91 /* BVBookViewController.h */,
+				457C53081B404769007ECD91 /* BVBookViewController.m */,
+			);
+			name = BVViewControllers;
+			sourceTree = "<group>";
+		};
+		457C52FF1B40281E007ECD91 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				457C530D1B40575D007ECD91 /* BVActivityProvider.h */,
+				457C530E1B40575D007ECD91 /* BVActivityProvider.m */,
+				457C52FB1B402807007ECD91 /* Book.h */,
+				457C52FC1B402807007ECD91 /* Book.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		457C53031B40352C007ECD91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				457C53041B403547007ECD91 /* BVBookTableViewCell.h */,
+				457C53051B403547007ECD91 /* BVBookTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		457C530A1B405490007ECD91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				457C530B1B40549E007ECD91 /* 9T4o7EeLc.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		457C52BF1B402477007ECD91 /* BookViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457C52E61B402477007ECD91 /* Build configuration list for PBXNativeTarget "BookViewer" */;
+			buildPhases = (
+				457C52BC1B402477007ECD91 /* Sources */,
+				457C52BD1B402477007ECD91 /* Frameworks */,
+				457C52BE1B402477007ECD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookViewer;
+			productName = BookViewer;
+			productReference = 457C52C01B402477007ECD91 /* BookViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		457C52DB1B402477007ECD91 /* BookViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 457C52E91B402477007ECD91 /* Build configuration list for PBXNativeTarget "BookViewerTests" */;
+			buildPhases = (
+				457C52D81B402477007ECD91 /* Sources */,
+				457C52D91B402477007ECD91 /* Frameworks */,
+				457C52DA1B402477007ECD91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457C52DE1B402477007ECD91 /* PBXTargetDependency */,
+			);
+			name = BookViewerTests;
+			productName = BookViewerTests;
+			productReference = 457C52DC1B402477007ECD91 /* BookViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		457C52B81B402477007ECD91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Air;
+				TargetAttributes = {
+					457C52BF1B402477007ECD91 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					457C52DB1B402477007ECD91 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 457C52BF1B402477007ECD91;
+					};
+				};
+			};
+			buildConfigurationList = 457C52BB1B402477007ECD91 /* Build configuration list for PBXProject "BookViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 457C52B71B402477007ECD91;
+			productRefGroup = 457C52C11B402477007ECD91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				457C52BF1B402477007ECD91 /* BookViewer */,
+				457C52DB1B402477007ECD91 /* BookViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		457C52BE1B402477007ECD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457C530C1B40549E007ECD91 /* 9T4o7EeLc.png in Resources */,
+				457C52D21B402477007ECD91 /* Main.storyboard in Resources */,
+				457C52D71B402477007ECD91 /* LaunchScreen.xib in Resources */,
+				457C52D41B402477007ECD91 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457C52DA1B402477007ECD91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		457C52BC1B402477007ECD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457C52FD1B402807007ECD91 /* Book.m in Sources */,
+				457C52F41B4026CE007ECD91 /* BVBooksTableViewController.m in Sources */,
+				457C52C91B402477007ECD91 /* AppDelegate.m in Sources */,
+				457C530F1B40575D007ECD91 /* BVActivityProvider.m in Sources */,
+				457C53091B404769007ECD91 /* BVBookViewController.m in Sources */,
+				457C53061B403547007ECD91 /* BVBookTableViewCell.m in Sources */,
+				457C53021B402A36007ECD91 /* BVAddBookViewController.m in Sources */,
+				457C52C61B402477007ECD91 /* main.m in Sources */,
+				457C52CC1B402477007ECD91 /* BookViewer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		457C52D81B402477007ECD91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457C52E31B402477007ECD91 /* BookViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		457C52DE1B402477007ECD91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 457C52BF1B402477007ECD91 /* BookViewer */;
+			targetProxy = 457C52DD1B402477007ECD91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		457C52D01B402477007ECD91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457C52D11B402477007ECD91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		457C52D51B402477007ECD91 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				457C52D61B402477007ECD91 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		457C52E41B402477007ECD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		457C52E51B402477007ECD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		457C52E71B402477007ECD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BookViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		457C52E81B402477007ECD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BookViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		457C52EA1B402477007ECD91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BookViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookViewer.app/BookViewer";
+			};
+			name = Debug;
+		};
+		457C52EB1B402477007ECD91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BookViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookViewer.app/BookViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		457C52BB1B402477007ECD91 /* Build configuration list for PBXProject "BookViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457C52E41B402477007ECD91 /* Debug */,
+				457C52E51B402477007ECD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		457C52E61B402477007ECD91 /* Build configuration list for PBXNativeTarget "BookViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457C52E71B402477007ECD91 /* Debug */,
+				457C52E81B402477007ECD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		457C52E91B402477007ECD91 /* Build configuration list for PBXNativeTarget "BookViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				457C52EA1B402477007ECD91 /* Debug */,
+				457C52EB1B402477007ECD91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		457C52CA1B402477007ECD91 /* BookViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				457C52CB1B402477007ECD91 /* BookViewer.xcdatamodel */,
+			);
+			currentVersion = 457C52CB1B402477007ECD91 /* BookViewer.xcdatamodel */;
+			path = BookViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 457C52B81B402477007ECD91 /* Project object */;
+}
