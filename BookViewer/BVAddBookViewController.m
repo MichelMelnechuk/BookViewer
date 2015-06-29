@@ -9,8 +9,13 @@
 #import "BVAddBookViewController.h"
 #import "AppDelegate.h"
 #import "Book.h"
+#import <Parse/Parse.h>
+#import "BVEnterParseViewController.h"
+#import "BVEnterParseViewController.h"
+
 
 @interface BVAddBookViewController () <UIImagePickerControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 @property (weak, nonatomic) IBOutlet UITextField *authorTextField;
 @property (weak, nonatomic) IBOutlet UITextField *categoryTextField;
@@ -101,6 +106,39 @@
         [(AppDelegate *)[UIApplication sharedApplication].delegate saveContext];
         [self performSegueWithIdentifier:@"saveIsSucces" sender:self];
     }
+}
+- (IBAction)saveWithParsePressed:(id)sender
+{
+    if ([self.titleTextField.text isEqual:@""] ||
+        [self.authorTextField.text isEqual:@""] ||
+        [self.categoryTextField.text isEqual:@""] ||
+        [self.descpritionTextView.text isEqual:@""] ||
+        !self.pickingImage)
+    {
+        UIAlertView *saveCDAlertView  = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                   message:@"Empty filed"
+                                                                  delegate:self
+                                                         cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        
+        [saveCDAlertView show];
+        
+        return;
+    }
+    
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
+                                                         bundle:nil];
+    BVEnterParseViewController *bvEnterBookViewController =
+    [storyboard instantiateViewControllerWithIdentifier:@"BVEnterParseViewController"];
+    
+    bvEnterBookViewController.titleOfBook = self.titleTextField.text;
+    bvEnterBookViewController.author = self.authorTextField.text;
+    bvEnterBookViewController.category = self.categoryTextField.text;
+    bvEnterBookViewController.descriptionOfBook = self.descpritionTextView.text;
+    bvEnterBookViewController.imageData = UIImagePNGRepresentation(self.pickingImage);
+    
+    [self presentViewController:bvEnterBookViewController
+                       animated:YES
+                     completion:nil];
 }
 
 /*

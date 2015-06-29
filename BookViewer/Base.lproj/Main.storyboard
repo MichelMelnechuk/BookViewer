@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Enter Parse View Controller-->
         <scene sceneID="Um3-C6-xKe">
             <objects>
-                <viewController id="b6n-Hh-hN7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BVEnterParseViewController" id="b6n-Hh-hN7" customClass="BVEnterParseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AUO-vj-GW1"/>
                         <viewControllerLayoutGuide type="bottom" id="j2o-m9-hht"/>
@@ -16,12 +16,52 @@
                     <view key="view" contentMode="scaleToFill" id="hTx-ob-v7t">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ff6-E3-82Q">
+                                <rect key="frame" x="145" y="285" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUJ-Zi-FJY">
+                                <rect key="frame" x="110" y="485" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPL-Kf-6mH">
+                                <rect key="frame" x="277" y="379" width="78" height="30"/>
+                                <state key="normal" title="Save book ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBook:" destination="b6n-Hh-hN7" eventType="touchUpInside" id="qdX-sG-saP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jec-zy-yqa">
+                                <rect key="frame" x="139" y="379" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oSy-iZ-Mtd" kind="show" id="oCp-gi-dAo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter nickname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rBQ-VO-fxX">
+                                <rect key="frame" x="145" y="186" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="rBQ-VO-fxX" id="tg9-bi-bUF"/>
+                        <outlet property="passwordTextFiled" destination="Ff6-E3-82Q" id="Xsk-nv-zFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SqN-kd-UTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="-231"/>
+            <point key="canvasLocation" x="2699" y="1069"/>
         </scene>
         <!--Book Viewer-->
         <scene sceneID="Gwh-4Z-ZbD">
@@ -170,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEl-tF-pnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021" y="483"/>
+            <point key="canvasLocation" x="2437" y="363"/>
         </scene>
         <!--Add Book View Controller-->
         <scene sceneID="bek-Vq-KQ6">
@@ -250,7 +290,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4y-ec-44I">
-                                <rect key="frame" x="550" y="487" width="34" height="30"/>
+                                <rect key="frame" x="283" y="480" width="34" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -289,14 +329,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fn-J8-UlQ">
+                                <rect key="frame" x="473" y="480" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="U1b-19-5wG"/>
+                                    <constraint firstAttribute="width" constant="111" id="gWK-Rw-qUd"/>
+                                </constraints>
+                                <state key="normal" title="Save with Parse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveWithParsePressed:" destination="oSy-iZ-Mtd" eventType="touchUpInside" id="Q6H-8D-jH7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CKG-vO-W4X" firstAttribute="top" secondItem="XB0-hJ-FPd" secondAttribute="bottom" constant="21" id="0Jy-Vj-VT9"/>
                             <constraint firstItem="VX7-LO-ajB" firstAttribute="top" secondItem="jji-qA-i4J" secondAttribute="bottom" constant="21" id="1xb-fZ-26b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XB0-hJ-FPd" secondAttribute="trailing" constant="31" id="59t-22-Zc7"/>
+                            <constraint firstItem="6Fn-J8-UlQ" firstAttribute="top" secondItem="VX7-LO-ajB" secondAttribute="bottom" constant="16" id="655-AK-S4B"/>
                             <constraint firstItem="VXd-jW-UJq" firstAttribute="top" secondItem="GIL-Z6-W0u" secondAttribute="bottom" constant="33" id="6BW-kY-eYR"/>
                             <constraint firstItem="GIL-Z6-W0u" firstAttribute="top" secondItem="2qQ-bk-esF" secondAttribute="bottom" constant="19" id="74y-rI-APl"/>
+                            <constraint firstItem="6Fn-J8-UlQ" firstAttribute="trailing" secondItem="36e-Lb-GhR" secondAttribute="trailingMargin" id="BcG-Lm-7sx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CKG-vO-W4X" secondAttribute="trailing" constant="31" id="CTb-iD-FS7"/>
                             <constraint firstItem="jji-qA-i4J" firstAttribute="top" secondItem="CKG-vO-W4X" secondAttribute="bottom" constant="15" id="HPu-YZ-hVV"/>
                             <constraint firstItem="XB0-hJ-FPd" firstAttribute="top" secondItem="rBU-PH-rgR" secondAttribute="bottom" constant="8" id="I4s-dq-cfH"/>
@@ -304,8 +359,8 @@
                             <constraint firstItem="iVP-Y5-ySg" firstAttribute="baseline" secondItem="CiM-jK-Zlk" secondAttribute="baseline" id="Iz1-gl-YY6"/>
                             <constraint firstItem="CiM-jK-Zlk" firstAttribute="top" secondItem="jji-qA-i4J" secondAttribute="bottom" constant="78" id="K8J-Wp-Coc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rBU-PH-rgR" secondAttribute="trailing" constant="31" id="KtJ-7x-aUp"/>
-                            <constraint firstItem="V4y-ec-44I" firstAttribute="top" secondItem="rjw-6U-EAf" secondAttribute="bottom" constant="467" id="N2O-M5-cUP"/>
-                            <constraint firstItem="V4y-ec-44I" firstAttribute="trailing" secondItem="36e-Lb-GhR" secondAttribute="trailingMargin" id="Pg7-h1-xuV"/>
+                            <constraint firstItem="V4y-ec-44I" firstAttribute="top" secondItem="rjw-6U-EAf" secondAttribute="bottom" constant="460" id="N2O-M5-cUP"/>
+                            <constraint firstAttribute="centerX" secondItem="V4y-ec-44I" secondAttribute="centerX" id="OIK-vq-v6h"/>
                             <constraint firstItem="bZr-Sy-r0j" firstAttribute="top" secondItem="iVP-Y5-ySg" secondAttribute="bottom" constant="92" id="Vla-lo-bZq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VX7-LO-ajB" secondAttribute="trailing" constant="31" id="Wos-DI-FpU"/>
                             <constraint firstItem="rBU-PH-rgR" firstAttribute="top" secondItem="rjw-6U-EAf" secondAttribute="bottom" constant="3" id="Zw1-s1-k8D"/>
@@ -330,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUz-dT-YlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="1225"/>
+            <point key="canvasLocation" x="2015" y="1115"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dld-GQ-Jtd">
@@ -353,6 +408,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="juS-Tk-x57"/>
+        <segue reference="oCp-gi-dAo"/>
+        <segue reference="Bvv-hc-vbh"/>
     </inferredMetricsTieBreakers>
 </document>
