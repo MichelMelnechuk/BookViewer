@@ -132,7 +132,24 @@ static NSString *const allBooksFetchID = @"fetchBooksID";
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    
+    NSError *error = nil;
+    
+    Book *bookForDelete = [[self resultBooks] objectAtIndex:indexPath.row];
+    
+    [[(AppDelegate *)[UIApplication sharedApplication].delegate managedObjectContext] deleteObject: bookForDelete];
+    
+    if (![[(AppDelegate *)[UIApplication sharedApplication].delegate managedObjectContext] save:&error]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"error"
+                                                            message:@"cant delete"
+                                                           delegate:self cancelButtonTitle:@"ok"
+                                                  otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    else
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    
+    
 }
 
 

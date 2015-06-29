@@ -5,6 +5,24 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Um3-C6-xKe">
+            <objects>
+                <viewController id="b6n-Hh-hN7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AUO-vj-GW1"/>
+                        <viewControllerLayoutGuide type="bottom" id="j2o-m9-hht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTx-ob-v7t">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SqN-kd-UTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="-231"/>
+        </scene>
         <!--Book Viewer-->
         <scene sceneID="Gwh-4Z-ZbD">
             <objects>
@@ -69,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mym-ef-G70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1278" y="483"/>
+            <point key="canvasLocation" x="1748" y="363"/>
         </scene>
         <!--Book View Controller-->
         <scene sceneID="3Rw-YX-sHj">
@@ -335,6 +353,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Bvv-hc-vbh"/>
+        <segue reference="juS-Tk-x57"/>
     </inferredMetricsTieBreakers>
 </document>
