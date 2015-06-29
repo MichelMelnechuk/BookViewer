@@ -21,6 +21,18 @@
 		457C53091B404769007ECD91 /* BVBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C53081B404769007ECD91 /* BVBookViewController.m */; };
 		457C530C1B40549E007ECD91 /* 9T4o7EeLc.png in Resources */ = {isa = PBXBuildFile; fileRef = 457C530B1B40549E007ECD91 /* 9T4o7EeLc.png */; };
 		457C530F1B40575D007ECD91 /* BVActivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 457C530E1B40575D007ECD91 /* BVActivityProvider.m */; };
+		45EE62381B414B9B0022D2F7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62371B414B9B0022D2F7 /* Social.framework */; };
+		45EE623A1B414BB60022D2F7 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62391B414BB60022D2F7 /* Accounts.framework */; };
+		45EE623C1B414BCB0022D2F7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE623B1B414BCB0022D2F7 /* libsqlite3.dylib */; };
+		45EE623E1B414BDA0022D2F7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE623D1B414BDA0022D2F7 /* libz.dylib */; };
+		45EE62401B414BE70022D2F7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE623F1B414BE70022D2F7 /* SystemConfiguration.framework */; };
+		45EE62421B414BF70022D2F7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62411B414BF70022D2F7 /* CFNetwork.framework */; };
+		45EE62441B414C5E0022D2F7 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62431B414C5E0022D2F7 /* ParseUI.framework */; };
+		45EE62471B414C6C0022D2F7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62451B414C6C0022D2F7 /* Bolts.framework */; };
+		45EE62481B414C6C0022D2F7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE62461B414C6C0022D2F7 /* Parse.framework */; };
+		45EE624B1B414CED0022D2F7 /* BVEnterParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EE624A1B414CED0022D2F7 /* BVEnterParseViewController.m */; };
+		45EE624E1B414FBB0022D2F7 /* BVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EE624D1B414FBB0022D2F7 /* BVUser.m */; };
+		45EE62501B4150B70022D2F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE624F1B4150B70022D2F7 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +71,20 @@
 		457C530B1B40549E007ECD91 /* 9T4o7EeLc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9T4o7EeLc.png; sourceTree = "<group>"; };
 		457C530D1B40575D007ECD91 /* BVActivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVActivityProvider.h; sourceTree = "<group>"; };
 		457C530E1B40575D007ECD91 /* BVActivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVActivityProvider.m; sourceTree = "<group>"; };
+		45EE62371B414B9B0022D2F7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		45EE62391B414BB60022D2F7 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		45EE623B1B414BCB0022D2F7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		45EE623D1B414BDA0022D2F7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		45EE623F1B414BE70022D2F7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		45EE62411B414BF70022D2F7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		45EE62431B414C5E0022D2F7 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Downloads/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		45EE62451B414C6C0022D2F7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		45EE62461B414C6C0022D2F7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		45EE62491B414CED0022D2F7 /* BVEnterParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVEnterParseViewController.h; sourceTree = "<group>"; };
+		45EE624A1B414CED0022D2F7 /* BVEnterParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVEnterParseViewController.m; sourceTree = "<group>"; };
+		45EE624C1B414FBB0022D2F7 /* BVUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVUser.h; sourceTree = "<group>"; };
+		45EE624D1B414FBB0022D2F7 /* BVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVUser.m; sourceTree = "<group>"; };
+		45EE624F1B4150B70022D2F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +92,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EE62501B4150B70022D2F7 /* AudioToolbox.framework in Frameworks */,
+				45EE62421B414BF70022D2F7 /* CFNetwork.framework in Frameworks */,
+				45EE62481B414C6C0022D2F7 /* Parse.framework in Frameworks */,
+				45EE62401B414BE70022D2F7 /* SystemConfiguration.framework in Frameworks */,
+				45EE62441B414C5E0022D2F7 /* ParseUI.framework in Frameworks */,
+				45EE623E1B414BDA0022D2F7 /* libz.dylib in Frameworks */,
+				45EE623C1B414BCB0022D2F7 /* libsqlite3.dylib in Frameworks */,
+				45EE623A1B414BB60022D2F7 /* Accounts.framework in Frameworks */,
+				45EE62381B414B9B0022D2F7 /* Social.framework in Frameworks */,
+				45EE62471B414C6C0022D2F7 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +118,16 @@
 		457C52B71B402477007ECD91 = {
 			isa = PBXGroup;
 			children = (
+				45EE624F1B4150B70022D2F7 /* AudioToolbox.framework */,
+				45EE62411B414BF70022D2F7 /* CFNetwork.framework */,
+				45EE623F1B414BE70022D2F7 /* SystemConfiguration.framework */,
+				45EE623D1B414BDA0022D2F7 /* libz.dylib */,
+				45EE62451B414C6C0022D2F7 /* Bolts.framework */,
+				45EE62461B414C6C0022D2F7 /* Parse.framework */,
+				45EE62431B414C5E0022D2F7 /* ParseUI.framework */,
+				45EE623B1B414BCB0022D2F7 /* libsqlite3.dylib */,
+				45EE62391B414BB60022D2F7 /* Accounts.framework */,
+				45EE62371B414B9B0022D2F7 /* Social.framework */,
 				457C52C21B402477007ECD91 /* BookViewer */,
 				457C52DF1B402477007ECD91 /* BookViewerTests */,
 				457C52C11B402477007ECD91 /* Products */,
@@ -150,6 +196,8 @@
 				457C53011B402A36007ECD91 /* BVAddBookViewController.m */,
 				457C53071B404769007ECD91 /* BVBookViewController.h */,
 				457C53081B404769007ECD91 /* BVBookViewController.m */,
+				45EE62491B414CED0022D2F7 /* BVEnterParseViewController.h */,
+				45EE624A1B414CED0022D2F7 /* BVEnterParseViewController.m */,
 			);
 			name = BVViewControllers;
 			sourceTree = "<group>";
@@ -161,6 +209,8 @@
 				457C530E1B40575D007ECD91 /* BVActivityProvider.m */,
 				457C52FB1B402807007ECD91 /* Book.h */,
 				457C52FC1B402807007ECD91 /* Book.m */,
+				45EE624C1B414FBB0022D2F7 /* BVUser.h */,
+				45EE624D1B414FBB0022D2F7 /* BVUser.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -283,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EE624E1B414FBB0022D2F7 /* BVUser.m in Sources */,
 				457C52FD1B402807007ECD91 /* Book.m in Sources */,
 				457C52F41B4026CE007ECD91 /* BVBooksTableViewController.m in Sources */,
 				457C52C91B402477007ECD91 /* AppDelegate.m in Sources */,
@@ -292,6 +343,7 @@
 				457C53021B402A36007ECD91 /* BVAddBookViewController.m in Sources */,
 				457C52C61B402477007ECD91 /* main.m in Sources */,
 				457C52CC1B402477007ECD91 /* BookViewer.xcdatamodeld in Sources */,
+				45EE624B1B414CED0022D2F7 /* BVEnterParseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +471,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/air/Downloads/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +486,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/air/Downloads/parse-library-1.7.5",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BookViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +550,7 @@
 				457C52E81B402477007ECD91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		457C52E91B402477007ECD91 /* Build configuration list for PBXNativeTarget "BookViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +559,7 @@
 				457C52EB1B402477007ECD91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
